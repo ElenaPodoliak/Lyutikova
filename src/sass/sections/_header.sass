@@ -1,0 +1,49 @@
+.q-header .q-inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.q-header
+    padding-top: 40px
+    padding-bottom: 40px
+    &__logo
+        display: flex
+        flex-direction: column
+        text-align: center
+        padding-right: 30px
+        &--title
+            font-size: 36px
+            text-transform: uppercase
+            line-height: 42px
+            padding-bottom: 8px
+            color:#212021
+        &--subtitle
+            font-size: 22px
+            color: #505050
+    &__menu
+        &--link
+            position: relative
+            font-size: 18px
+            line-height: 30px
+            color: #212021
+            margin: 8px 40px 8px 0
+            transition: .7s
+            &:last-child
+                margin-right: 0
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                bottom: -10px
+                width: 0%
+                height: 1px
+                background-color: #404040
+                opacity: 0
+                transition: .5s
+            &:hover::before
+                width: 100%
+                opacity: 1
+            &:hover
+                color: #909090
+
+
