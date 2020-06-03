@@ -1,0 +1,54 @@
+.q-price .q-inner
+    border-top: 1px solid 
+    margin-bottom: 40px
+
+.q-price-services
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-bottom: 70px
+    &__item
+        width: 30%
+        &--img
+            width: 100%
+            margin-bottom: 30px
+            box-shadow: 5px 2px 5px 0px rgba(96,96,96,1)
+            transition: .5s 
+            &:hover
+                box-shadow: 9px 6px 9px 0px rgba(99,99,99,1)
+        &--text
+            line-height: 22px
+            span
+                font-size: 17px
+                font-weight: 600
+                display: block
+                padding-bottom: 15px
+                transition: .5s 
+                &:hover
+                    text-shadow: 2px 2px 5px  #b6b5b5
+        &--list
+            li
+                line-height: 20px
+                margin-left: 25px
+                padding-left: 7px
+                padding-bottom: 8px
+                list-style: circle
+
+.q-price-services.q-other
+    display: block
+    .q-price-services
+        &__item
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &--img
+                max-width: 500px
+            &--text
+                width: 55%
+        &__add
+            width: 100%
+            padding-top: 70px
+            p
+                line-height: 25px
+                padding-top: 35px

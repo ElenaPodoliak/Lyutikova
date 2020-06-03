@@ -1,35 +1,43 @@
 .q-about .q-inner
-    border-top: 1px solid #9e9e9e
-    margin-bottom: 80px
-    
-.q-about
-    &__title
+    border-top: 1px solid 
+    margin-bottom: 40px
+
+.q-section-title
         display: block
         text-align: center
-        // font-style: italic
         font-size: 23px
-        padding: 20px 20px 40px 5px
+        padding: 50px 20px 40px 5px
+        transition: .5s 
+        &:hover
+            text-shadow: 8px 8px 15px  #9e9e9e 
 
 .q-about-content
-    text-align: justify
+    text-align: justify   
     &__img
         float: left
         max-width: 600px
-        box-shadow: 7px 5px 7px 0px rgba(96,96,96,1)
-        margin-right: 30px
+        box-shadow: 5px 2px 5px 0px rgba(96,96,96,1)
+        transition: .5s 
+        margin-right: 40px
+        &:hover
+            box-shadow: 9px 6px 9px 0px rgba(99,99,99,1)
     &__info-box
-        // font-style: italic
         font-size: 17px
         line-height: 27px
-        p 
-            padding-bottom: 20px
+        p
+            transition: .5s 
+            padding-bottom: 18px
+            &:hover
+                text-shadow: 2px 2px 5px  #b6b5b5
             &:last-child
                 padding-bottom: 40px
-        &--list 
-            // margin-left: 640px
+        &--list
+            transition: .5s  
             padding-bottom: 20px
+            &:hover
+                text-shadow: 2px 2px 5px  #b6b5b5
 
-        &--link
+        &--list a
             display: block
             & + a 
                 padding-top: 18px
